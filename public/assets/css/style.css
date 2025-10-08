@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Container chính */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Card đăng nhập/đăng ký */
+.auth-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.logo h1 {
+    color: #fff;
+    font-size: 2.2em;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.logo p {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.95em;
+}
+
+/* Tiêu đề form */
+.auth-form h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+}
+
+/* Input */
+.input-group {
+    margin-bottom: 20px;
+}
+.input-group label {
+    display: block;
+    color: #fff;
+    margin-bottom: 6px;
+    font-size: 0.9em;
+}
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    font-size: 1em;
+}
+.input-group input::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+/* Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.checkbox-group input {
+    margin-right: 10px;
+}
+.checkbox-group label {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.85em;
+}
+
+/* Button */
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    transform: translateY(-3px);
+    opacity: 0.95;
+}
+
+/* Quên mật khẩu + switch form */
+.forgot-password, .switch-form {
+    text-align: center;
+    margin-top: 10px;
+}
+.forgot-password a, .switch-form a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.forgot-password a:hover, .switch-form a:hover {
+    text-decoration: underline;
+}
+
+/* Particles nền */
+.particles {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.particle {
+    position: absolute;
+    background: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    animation: particleFloat 15s linear infinite;
+}
+@keyframes particleFloat {
+    0% { transform: translateY(100vh); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}

@@ -1,0 +1,40 @@
+/* === Launcher & lựa chọn chế độ === */
+.chat-launcher{position:fixed;right:18px;bottom:18px;z-index:99998}
+.chat-launcher .fab{
+  width:56px;height:56px;border-radius:50%;border:none;cursor:pointer;
+  background:#2563eb;color:#fff;font-size:22px;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.25)
+}
+.chat-launcher .menu{
+  position:absolute;right:64px;bottom:0;background:#111827;color:#e5e7eb;
+  padding:8px;border-radius:12px;box-shadow:0 16px 40px rgba(0,0,0,.35);min-width:220px;display:none
+}
+.chat-launcher .menu.open{display:block}
+.chat-launcher .menu h6{margin:6px 8px 8px;font-size:13px;color:#9ca3af}
+.chat-launcher .menu button{
+  width:100%;text-align:left;border:0;background:transparent;color:#fff;
+  padding:10px 12px;border-radius:8px;cursor:pointer;font-size:14px
+}
+.chat-launcher .menu button:hover{background:#1f2937}
+.chat-launcher .menu button[disabled]{opacity:.55;cursor:not-allowed}
+
+/* Ẩn nút toggle cũ bên trong #support-bubble (ta dùng launcher riêng) */
+#support-bubble .chat-toggle{display:none !important}
+.chat-launcher{position:fixed;right:18px;bottom:18px;z-index:99998}
+.chat-launcher .fab{
+  width:56px;height:56px;border-radius:50%;border:none;cursor:pointer;
+  background:#2563eb;color:#fff;font-size:22px;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.25)
+}
+.chat-launcher .menu{
+  position:absolute;right:64px;bottom:0;background:#111827;color:#e5e7eb;
+  padding:8px;border-radius:12px;box-shadow:0 16px 40px rgba(0,0,0,.35);min-width:220px
+}
+.chat-launcher .menu[hidden]{display:none}
+.chat-launcher .menu h6{margin:6px 8px 8px;font-size:13px;color:#9ca3af}
+.chat-launcher .menu button{
+  width:100%;text-align:left;border:0;background:transparent;color:#fff;
+  padding:10px 12px;border-radius:8px;cursor:pointer;font-size:14px
+}
+.chat-launcher .menu button:hover{background:#1f2937}
+.chat-launcher .menu button[disabled]{opacity:.55;cursor:not-allowed}
