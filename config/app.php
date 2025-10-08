@@ -3,11 +3,11 @@
 
 // Nếu có biến môi trường (Railway), thì dùng biến đó.
 // Nếu không có (chạy local Laragon), thì dùng giá trị mặc định.
-define('DB_HOST', getenv('DB_HOST') ?: '127.0.0.1');
-define('DB_NAME', getenv('DB_NAME') ?: 'badminton_db');
-define('DB_USER', getenv('DB_USER') ?: 'root');
-define('DB_PASS', getenv('DB_PASS') ?: '');
-define('DB_PORT', getenv('DB_PORT') ?: '3306');
+define('DB_HOST', 'hopper.proxy.rlwy.net');
+define('DB_PORT', 33136);
+define('DB_NAME', 'railway');
+define('DB_USER', 'root');
+define('DB_PASS', 'iImNxEKVmFbvBHgSdUUnyXwiTirsDxlX');
 
 // URL gốc — sửa khi deploy (Railway sẽ có domain thật)
 define('BASE_URL', getenv('BASE_URL') ?: 'http://localhost/badminton-booking/public');
